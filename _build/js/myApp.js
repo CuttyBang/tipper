@@ -1,27 +1,23 @@
-(function(){
 
-  'use strict'
+myApp.controller('myCtrl', function(){
 
-  angular.module('myApp')
-    .controller('myCtrl', function(){
-
-        numbers = {
-          price: 125,
-          subtotal: 125,
-          tax: 122,
-          taxRate: 12,
-          tip: 12,
-          tipPercent: 12,
-          totalPrice: 12,
-          tipTotal: 123,
-          mealCount: 125,
-          tipAverage: 125
-        }
-      }
+    numbers = {
+      price: 125,
+      subtotal: 125,
+      tax: 122,
+      taxRate: 12,
+      tip: 12,
+      tipPercent: 12,
+      totalPrice: 12,
+      tipTotal: 123,
+      mealCount: 125,
+      tipAverage: 125
+    }
+  }
 
 });
 
-});
+
 
 //.controller('earnings', function($scope, totaEarnings){
   //$scope.numbers = totalEarnings;
@@ -33,8 +29,7 @@
     //$scope.numbers = totalEarnings;
   //}
 //})
-
-$scope.reset = function() {
+/*$scope.reset = function() {
   initializeForm();
   $scope.tableForm.$setPristine();
 }
@@ -82,4 +77,4 @@ var Meal = function(price, tax, tip){
   this.price = price;
   this.tax = tax;
   this.tip = tip;
-}
+}*/

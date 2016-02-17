@@ -23,7 +23,7 @@ var dirs = {
 };
 
 
-gulp.task('jshint', function() {
+gulp.task('lint', function() {
   return gulp.src(dirs.js + '*.js')
   .pipe(jshint({
     asi: true
@@ -42,7 +42,7 @@ gulp.task('sass', function(){
 
 //watch
 gulp.task('watch', function(){
-  gulp.watch('./' +  dirs.js + '*.js', ['jshint','scripts'])
+  gulp.watch('./' +  dirs.js + '*.js', ['lint','scripts'])
   gulp.watch(dirs.scss + '*.scss', gulpsync.sync(['sass','styles']));
 });
 
@@ -65,4 +65,4 @@ gulp.task('styles', function() {
 
 gulp.task('default', ['watch']);
 
-gulp.task('build', gulpsync.sync(['sass', 'styles', 'jshint', 'scripts']));
+gulp.task('build', gulpsync.sync(['sass', 'styles', 'lint', 'scripts']));
