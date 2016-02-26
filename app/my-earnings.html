@@ -1,0 +1,40 @@
+
+  <section>
+    <div class="outcomes">
+      <div class="customer-charges">
+        <div class="cust">
+          <h2>Customer Charges</h2>
+        </div>
+        <div class="charge-form">
+          <label for="subtotal">Subtotal: </label>
+          <span class="outcome-numbers" id="subtotal">{{data.subtotal | currency}}</span>
+        </div>
+        <div class="charge-form">
+          <label for="totalPrice">Tip: </label>
+          <span class="outcome-numbers" id="checkTotal">{{data.tip | currency}}</span>
+        </div>
+        <div class="charge-form">
+          <label for="totalPrice">Total Price: </label>
+          <span class="outcome-numbers" id="checkTotal">{{data.totalPrice | currency}}</span>
+        </div>
+      </div>
+      <div class="earnings-info">
+        <div class="earn">
+          <h2>My Earnings</h2>
+        </div>
+        <div class="earnings-form">
+          <label for="tipTotal" class="">Tip Total: </label>
+          <span class="outcome-numbers" id="tipTotal">{{data.tipTotal | currency}}</span>
+        </div>
+        <div class="earnings-form">
+           <label for="mealCount" class="">Total Meals: </label>
+           <span class="outcome-numbers" id="tipTotal">{{data.mealCount}}</span>
+        </div>
+        <div class="earnings-form">
+          <label for="averageTip" class="">Average Tip: </label>
+          <span class="outcome-numbers" id="tipTotal">{{data.averageTip | currency}}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

@@ -1,0 +1,195 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  font-family: 'Montserrat', sans-serif; }
+
+footer {
+  height: 100px; }
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.75em;
+  margin-bottom: 0; }
+  .title h1 {
+    margin-top: 0.3em;
+    margin-bottom: 0; }
+
+body {
+  background-image: url("../img/seamless_paper_texture.png"); }
+
+
+.buttons {
+  display: inline;
+  margin: 2em 0.75em 0 0.75em;
+  background-color: #ff6500;
+  border-color: #ff6500;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.6em; }
+
+#submit {
+  display: block;
+  width: 6.6em;
+  margin-top: 1.75em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff6500;
+  border-color: #ff6500;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0.6em; }
+}
+
+.main-body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+
+
+.meal-details {
+  width: 275px;
+  height: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  margin-top: 1em;
+  border: 3px solid #000;
+  text-align: center; }
+
+
+#meal-head {
+  margin-top: 0;
+  padding-top: 1em;
+  border-bottom: 3px solid #000;
+  background-color: #04a7f7;
+  color: #fff; }
+
+.my-form {
+  margin: 3em 2em; }
+  .my-form input {
+    margin-bottom: 2em; }
+
+.outcomes {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+}
+
+
+.cust, .earn {
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+  padding-top: 0.75em;
+  border-bottom: 3px solid #000;
+  background-color: #04a7f7; }
+
+.charge-form {
+  margin: 1em 0 0 1em;;
+  font-weight: 400;
+}
+
+.customer-charges {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  width: 275px;
+  height: 280px;
+  margin-bottom: 10px;
+  border: 3px solid #000; }
+  .customer-charges::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.earnings-info {
+  display: block;
+  font-size: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  width: 275px;
+  height: 280px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border: 3px solid #000; }
+  .earnings-info::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.earnings-form {
+    margin: 1em 0 0 1em;
+    font-weight: 400;
+}
+
+.details {
+  width: 90%;
+  border: 3px solid #000;
+  margin: 1em auto;
+}
+
+.top-heading {
+  border: 1px solid #000;
+  background-color: #04a7f7;
+  color: #fff;
+  font-weight: 700;
+}
+
+.top-heading p {
+  font-weight: 400;
+}
+
+.bottom-heading {
+  border: 1px solid #000;
+  background-color: #04a7f7;
+  color: #fff;
+  font-weight: 700;
+}
+
+.bottom-heading p {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px){
+  .customer-charges {
+    width: 350px;
+  }
+  .earnings-info {
+    width: 350px;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .title h1 {
+    margin-top: 1em;
+  }
+  .meal-details {
+    width: 400px;
+
+}
+
+@media screen and (min-width: 1024px){
+  .customer-charges {
+      width: 400px;
+  }
+  .earnings-info {
+    width: 400px;
+  }
+  .title {
+    font-size: 2.25em;
+  }
+  .meal-details {
+    width: 80%;
+    height: 500px;
+}
+#submit{
+  display: inline;
+}
